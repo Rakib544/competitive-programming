@@ -12,16 +12,12 @@ int main() {
         cin >> weights[i] >> values[i];
     } 
 
-    vector<vector<ll>> dp(n+1, vector<ll>(w+1, 0));
-    for(int i = 1; i <= n; i++) {
-        for(int j = 1; j <= w; j++) {
-            if(j >= weights[i-1]) {
-                dp[i][j] = max(dp[i-1][j], dp[i-1][j - weights[i-1]] + values[i-1]);
-            }else {
-                dp[i][j] = dp[i-1][j];
-            }
+    vector<ll> dp(w+1, 0);
+    for(int i = 0; i < n; i++) {
+        for(int j = w; j >= weights[i]; j--) {
+            dp[j] = max(dp[j], values[i] + dp[j - weights[i]]);
         }
     }
-    cout << dp[n][w] << "\n";
+    cout << dp[w] << "\n";
     return 0;
 }
