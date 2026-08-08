@@ -120,14 +120,7 @@ docs: Update progress
 - Greedy
 - Two Pointers
 - Prefix Sum
-- Bit Manipulation
-- Graph Theory
 - Dynamic Programming
-- Number Theory
-- Trees
-- Strings
-- Data Structures
-- Geometry
 
 More topics will be added as I progress.
 
