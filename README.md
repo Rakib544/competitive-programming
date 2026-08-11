@@ -105,7 +105,7 @@ docs: Update progress
 
 | Platform      | Solved |
 | ------------- | -----: |
-| Codeforces    |      0 |
+| Codeforces    |      36 |
 | AtCoder       |      0 |
 | CSES          |      0 |
 | ICPC Practice |      0 |
