@@ -9,18 +9,25 @@ int main() {
     vector<int> coins(n);
     for(int i = 0; i < n; i++) cin >> coins[i];
     long long sum = accumulate(coins.begin(), coins.end(), 0LL);
-    vector<vector<bool>> dp(n+1, vector<bool>(sum + 1, false));
-    dp[0][0] = true;
+
+    vector<bool> dp(sum + 1, false);
+    dp[0] = true;
+
     for(int i = 1; i <= n; i++) {
-        for(int j = 0; j <= sum; j++) {
-            dp[i][j] = dp[i-1][j] || dp[i-1][j - coins[i-1]];
+        for(int j = sum; j >= coins[i-1] ; j--) {
+            dp[j] = (dp[j] || dp[j-coins[i-1]]);
         }
     }
-    vector<int> ans;
+
+    long long cnt = 0;
     for(int i = 1; i <= sum; i++) {
-        if(dp[n][i]) ans.push_back(i);
+        if(dp[i]) cnt++;
     }
-    cout << ans.size() << "\n";
-    for(int n: ans) cout << n << " ";
+
+    cout << cnt << "\n";
+    for(int i = 1; i <= sum; i++) {
+        if(dp[i]) cout << i << " ";
+    }
+
     return 0;
 }
