@@ -107,7 +107,7 @@ docs: Update progress
 | ------------- | -----: |
 | Codeforces    |      36 |
 | AtCoder       |      0 |
-| CSES          |      0 |
+| CSES          |      30 |
 | ICPC Practice |      0 |
 
 ---
