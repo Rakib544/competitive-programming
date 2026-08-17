@@ -105,9 +105,9 @@ docs: Update progress
 
 | Platform      | Solved |
 | ------------- | -----: |
-| Codeforces    |      36 |
+| Codeforces    |     36 |
 | AtCoder       |      0 |
-| CSES          |      30 |
+| CSES          |     30 |
 | ICPC Practice |      0 |
 
 ---
@@ -172,7 +172,7 @@ Some of the platforms used for practice include:
 - Codeforces
 - AtCoder
 - CSES Problem Set
-- UVA Online Judge
+- Codechef
 - ICPC Practice Contests
 
 ---
