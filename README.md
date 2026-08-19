@@ -30,7 +30,6 @@ competitive-programming/
 ├── Codeforces/
 ├── AtCoder/
 ├── CSES/
-├── UVA/
 ├── ICPC/
 │
 ├── Notes/
